@@ -1,0 +1,30 @@
+/*Navigation Bar */
+#navbar{
+    flex-direction: column;
+}
+
+
+/* Home */
+#home{
+    height: 280px;
+    padding: 3px 68px;
+}
+#home::before{
+    height: 370px;
+}
+
+#services{
+    flex-direction: column;
+}
+#home p{
+    font-size: 13px;
+}
+#home h1{
+    font-size: 26px;
+}
+
+
+
+#ourpartners{
+    overflow: hidden;
+}
