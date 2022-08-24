@@ -1,0 +1,225 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/* Navigation Bar :Logo */
+#logo{
+    margin: 0px 36px;
+}
+#logo img{
+    display: block;
+    margin: 3px 5px;
+    height: 125px;
+}
+/* Navigation Bar: lists */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.9;
+}
+#navbar ul li{
+    font-size: 22px;
+    list-style: none;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px 35px;
+    transition: all .5s;
+}
+#navbar ul li a:hover{
+    background-color:rgba(255, 255, 255, .8);
+    color: black;
+    /* opacity: .7; */
+    padding: 20px 35px;
+    border-radius: 8px;
+    
+}
+#right-nav{
+    margin-left: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height:753px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home .btn button{
+    margin: 38px;
+    font-size: 22px;
+    padding: 7px;
+    border: none;
+    border-radius: 8px;
+   /*background-image: linear-gradient(red, orange);/* linear gradient(direction,color,color)*/
+   background-color:rgb(117 97 86);
+   color: white;
+}
+#home::before{
+    content:"";
+    background: url(../homesection.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.9;
+}
+#home h1{
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+}
+#home p{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    opacity: 1.8;
+}
+.center{
+    text-align: center;
+}
+
+
+/* Servies */
+.h-primary{
+    margin-top: -90px;
+    font-size: 40px;
+}
+#services{
+    display: flex;
+    margin: 27px;
+}
+#services .image1{
+    border: 3px solid rgb(231, 180, 61);
+    background-color: rgba(255, 235, 205, 0.301);
+    padding: 35px;
+    margin: 3px 10px;
+    border-radius: 30px;
+}
+#services .image1 img{
+    display: block;/* to align the image at center we use the margia auto property but to use
+    margin auto property we must first use the display block property and set the height or width*/ 
+    margin:auto;
+    height: 150px;
+}
+
+
+/*Clients Section */
+.heading{
+    text-align: center;
+    font-size: 27px;
+}
+#partners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ourpartners{
+    height: 344px;
+}
+#partners img{
+    margin-top: 45px;
+    height: 116px;
+}
+.partnername{
+    padding: 0px 75px;
+}
+#ourpartners::before{
+    content: "";
+    position: absolute;
+    background: url('../client.jpg');
+    width: 100%;
+    height: 35%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+/* Contact Us */
+.headingcontact{
+    text-align: center;
+    font-size: 36px;
+}
+#contactus{
+    margin-top: -79px;
+    position: relative;
+}
+#contactus::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('../contact.jpg')no-repeat center center/cover;
+}
+footer{
+    background-color:grey;
+    color:whitesmoke;
+    font-weight: bold;
+    padding: 9px 20px;
+}
+#contactforms input,
+#contactforms textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+#contactforms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+#contactforms form{
+    width: 40%;
+}
+#contactforms label{
+    font-size: 1.5rem;
+}
+.submit{
+    margin: 15px auto 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submitbutton{
+    padding: 4px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.submitbutton:active{
+    margin: 20px auto 5px auto;
+}
