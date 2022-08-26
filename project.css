@@ -7,7 +7,8 @@
 #navbar{
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
+    top: 0px;
 }
 /* Navigation Bar :Logo */
 #logo{
@@ -171,7 +172,7 @@
 }
 #contactus{
     margin-top: -65px;
-    /*position: relative;*/
+    position: relative;
 }
 #contactus::before{
     content: "";
